@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+
+    <title>Robots Shop</title>
+
+    
+    
+</head>
+    
+    <body>
+       
+        <header>
+            <a href="index.html">
+                <p class="banderolelogo"><img src="/home.png" alt="logo de robothash" class="logo">- BACK HOME -</p>
+            </a>
+            <p class="commande">MY COMMAND</p>
+        </header>
+
+        <main>
+
+                <div class="revision" id="revision"></div>
+
+                <div id="viderPanier"></div>
+
+                <p class="Total" id="Total"></p>
+                
+                    <div class="coordonnees" id="coordonnees">
+                
+                        <form>
+            
+                            <fieldset class="coordperso">
+                                <legend>PERSONAL DETAILS</legend>
+            
+                                <label for="nom">Lastname<span class="etoile">*</span></label>
+                                <input type="text" name="nom" id="nom" autofocus required/>
+            
+                                <label for="prenom">Firstname<span class="etoile">*</span></label>
+                                <input type="text" name="prenom" id="prenom" required />
+            
+                                <label for="email">Email address<span class="etoile">*</span></label>
+                                <input type="email" name="email" id="email" required />
+            
+                                <label for="adresse">Address<span class="etoile">*</span></label>
+                                <input type="text" name="adresse" id="adresse" required />
+            
+                                <label for="ville">City<span class="etoile">*</span></label>
+                                <input type="text" name="ville" id="ville" required />    
+                            </fieldset>
+            
+                            <button type="submit" class="passercommande" id="passercommande">TO ORDER</button>
+                        </form>
+                    </div>
+
+        </main>
+
+        <footer>
+            <img src="/home.png" alt="logo de robothash" class="logo-footer">
+            <p class="description">BUY YOUR GENERATE UNIQUE IMAGES FROM ANY TEXT.</p>
+            <img src="/home.png" alt="logo de robothash" class="logo-footer">
+        </footer>
+
+      
+
+      <script src="/scriptsJs/fonctions.js"></script>
+      <script src="/scriptsJs/panier.js"></script>
+     </body>
+    </html>

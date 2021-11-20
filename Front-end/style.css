@@ -1,0 +1,391 @@
+body{
+    font-family: roboto, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body a:link{
+    text-decoration: none;
+    color: black;
+}
+
+body a:visited {
+    color: black;
+}
+
+header{
+    margin: 50px;
+}
+
+.logo{
+    width: 40vw;
+    max-width:400px ;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
+
+.banderolelogo{
+    background-color:rgb(24, 127, 161) ;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+/*Bouton du panier*/
+.btn-panier {
+    font-weight: bold;
+    text-align: center;
+    margin: 80px auto;
+    cursor: pointer;
+    font-size: 3rem;
+    border: 5px rgb(0, 217, 255) solid;
+    border-radius: 1rem;
+    background-color: rgb(24, 127, 161);
+    opacity: 1;
+    transform: scale(1.05);
+    transition: transform 400ms;
+    width: 60vw;
+    max-width: 400px;
+}
+
+.btn-panier:hover{
+    opacity: .8;
+    transform: scale(1);
+}
+/*Disposition des articles*/
+.accueil {
+    display: flex;
+    flex-wrap: wrap;
+}
+/*articles des produits page accueil*/
+.articleAccueil{
+    background-color: rgb(24, 127, 161);
+    width: 400px;
+    border: 5px rgb(24, 127, 161) solid;
+    border-radius: .5rem;
+    margin: 50px auto;
+    transition: transform 300ms;
+}
+
+.articleAccueil:hover{
+    transform: scale(1.05);
+}
+
+.articleAccueil img{
+    width: 100%;
+    max-width: 400px; 
+    max-height: 255px;
+}
+
+.articleAccueil p {
+    padding-top: 20px;
+    padding-left: 20px;
+    color: blanchedalmond;
+}
+/*Nom de l'article*/
+.articleAccueil h2 {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+/*----------------------------Page de sélection---------------------------------------*/
+
+.selection{
+    width: 1000px;
+    margin: auto;
+}
+.text-nombre{
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+}
+
+ label {
+    font-size: 1.5rem;
+}
+
+.articleSelection h3{
+    text-decoration: underline;
+    text-align: center;
+    font-size: 1.7rem;
+    margin-top: 50px;
+}
+
+.articleSelection {
+    word-wrap: break-word;}
+
+.couleurs{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.articleSelection{
+    background-color: rgb(24, 127, 161);
+    border: 5px rgb(24, 127, 161) solid;
+    border-top-left-radius: .5rem;
+    border-top-right-radius :.5rem;
+    width: 60%;
+    margin: auto;
+}
+
+.articleSelection img{
+    width: 100%;
+    max-width: 800px; 
+    height: 400px;
+    display: block;
+    margin: auto;
+}
+
+.articleSelection p{
+    color: blanchedalmond;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 50px;
+}
+
+.articleSelection h2{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.compteur{
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    font-size: 2rem;
+    width: 50px;
+}
+
+/*Bouton d'ajout de l'article au panier */
+.btn-ajouterPanier{
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    font-size: 2.5rem;
+    border: 6px rgb(0, 217, 255) solid;
+    background-color: thistle;
+    width: 61%;
+    margin:auto;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    opacity: 1;
+    transform: scale(1);
+    transition: transform 400ms;
+}
+
+.btn-ajouterPanier:hover{
+    transform: scale(1.15);
+    opacity: .8;  
+}
+
+.btn-ajouterPanier:active{
+    background-color: blue;
+}
+
+/*-----------------------------Page du panier------------------------------------------*/
+
+.coordperso input{   
+    margin: 20px;
+    height: 30px;
+    font-size: 1.5rem;
+}
+
+legend{
+    font-weight: bold;
+}
+
+.commande{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    border: 2px rgb(24, 127, 161) solid;
+    border-radius: 1rem;
+}
+
+.coordperso{
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin: 50px auto;
+}
+
+.etoile{
+    color: red;
+}
+
+/*bouton de validation de commande*/
+.passercommande{
+    font-size: 2rem;
+    font-weight: bold;
+    border: 5px rgb(24, 127, 161) solid;
+    border-radius: 1rem;
+    cursor: pointer;
+    display: block;
+    margin: 50px auto;
+}
+
+.passercommande:hover{
+    background-color: rgb(24, 127, 161);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px;
+    background-color:rgb(24, 127, 161) ;
+    color: blanchedalmond;
+    text-align: center;
+}
+
+
+.logo-footer{
+    width: 200px;
+    display: block;
+    margin: 0 50px;
+}
+
+@media screen and (max-width:1160px){
+    .logo-footer{
+        display: none;
+    }
+}
+
+/*Tableau récapitulatif*/
+table{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+ table td,th {
+    border: 2px rgb(24, 127, 161) solid;
+    width: 150px;
+    font-size: 1.5rem;
+    padding: 20px;
+    
+}
+
+.bouton_supprimer{
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 400ms;
+}
+
+.bouton_supprimer:hover{
+    background-color: red;
+    transform: scale(1.15);
+}
+
+.Total{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#btn-empty{
+    display: block; 
+    margin: 30px auto; 
+    padding: 10px;
+    border: 2px rgb(24, 127, 161) solid;
+    border-radius: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#btn-empty:hover{
+    background-color: red;
+}
+
+.disparition{
+    display: none;
+}
+
+/* Couleurs des champs pour leur validation */
+.red{
+    background-color: rgb(247, 170, 170);
+}
+
+.green{
+    background-color: rgb(210, 243, 161);
+}
+
+/*Page de confirmation*/
+.confirmation{
+    border: 3px rgb(24, 127, 161) solid;
+    background-color: rgb(225, 204, 231);
+}
+
+.confirmation h1,h2,h3,h4{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.confirmation h1{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.confirmation h3,h4 {
+    font-size: 1.8rem;
+}
+
+/* Responsive de la page selection */
+@media screen and (max-width : 414px){
+    .articleSelection{
+        width: 95% ;
+    }
+    header{
+        margin : 0 ;
+    }
+    .btn-panier{
+        width: 80%;
+    }
+    .btn-ajouterPanier{
+        width: 98%;
+    }
+
+    footer{
+        width: 100%;
+        margin :50px 0;
+    }
+}
+
+/* Responsive de la page panier */
+
+@media screen and (max-width : 1160px){
+
+    .revision{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    table {
+        display: none;
+    }
+
+    .responsive{
+        display: flex;
+        flex-direction: column;
+        border : thick double #32a1ce;
+        margin: 20px;
+        padding: 40px;
+    }
+
+    .bouton_supprimer{
+        max-width: 50px;
+        margin: 20px auto 10px auto;
+    }
+
+}
+
+@media screen and (min-width : 1161px){
+    .responsive{
+        display: none;
+    }
+}
